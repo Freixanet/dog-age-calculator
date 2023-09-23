@@ -19,7 +19,6 @@ function calculateDogAge() {
     " días.";
 }
 
-// Asegúrate de tener un elemento con id "logo" en tu HTML
 var logo = document.querySelector(".logo");
 
 // Guarda la posición inicial del logo
@@ -32,6 +31,7 @@ var initialPosition = {
 logo.style.cursor = "pointer";
 
 function dragStart(event) {
+  event.preventDefault();
   logo.style.position = "absolute";
   logo.style.zIndex = 1000;
 
@@ -43,8 +43,8 @@ function dragStart(event) {
   moveAt(event.pageX, event.pageY);
 
   function dragMove(event) {
-    moveAt(event.pageX, event.pageY);
     event.preventDefault();
+    moveAt(event.pageX, event.pageY);
   }
 
   document.addEventListener("mousemove", dragMove);
