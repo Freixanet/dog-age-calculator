@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Calculadora de edad de perros</title>
+    <link rel="stylesheet" type="text/css" href="styles.css" />
+  </head>
+  <body>
+    <img
+      src="./assets/logo-dog-age-calculator-nobg.png"
+      alt="Logo"
+      class="logo"
+    />
+    <h1 class="title">Calculadora de edad de perros</h1>
+    <div class="input-container">
+      <p>Introduce la fecha de nacimiento de tu perro:</p>
+      <input
+        type="date"
+        id="dog-birthday"
+        name="dog-birthday"
+        class="date-input"
+        value="2022-06-16"
+      />
+    </div>
+    <button onclick="calculateDogAge()" class="calculate-button">
+      Calcular edad
+    </button>
+
+    <p id="result" class="result-text"></p>
+
+    <script src="/scripts.js"></script>
+  </body>
+</html>

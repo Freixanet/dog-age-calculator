@@ -1,0 +1,62 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f8f9fa;
+  color: #333;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.container {
+  width: 80%;
+  max-width: 1200px; /* Aumenta el ancho máximo para un diseño más espacioso */
+  margin: auto; /* Centra el contenedor en la página */
+
+  /* Añade un recuadro alrededor del contenedor */
+  border: 1px solid #ced4da;
+  padding: 20px; /* Añade un poco de espacio alrededor del contenido dentro del contenedor */
+}
+
+.logo {
+  position: absolute;
+  top: -45px;
+  left: 10px;
+  width: 250px; /* Puedes ajustar esto según el tamaño ideal para tu logo */
+}
+
+.title {
+  color: #007bff;
+}
+
+.input-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Centra los elementos en el eje horizontal */
+}
+
+.date-input {
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #ced4da;
+  cursor: pointer;
+}
+
+.calculate-button {
+  background-color: #007bff;
+  color: white;
+  padding: 10px; /* Reduce el padding para hacer el botón más pequeño */
+  border-radius: 5px;
+
+  /* Añade un margen superior para separar el botón de la barra de entrada */
+  margin-top: 20px;
+  cursor: pointer;
+}
+
+.calculate-button:hover {
+  background-color: #0056b3;
+}
+
+.result-text {
+  margin-top: 40px;
+}
