@@ -31,8 +31,7 @@ var initialPosition = {
 // Cambia el cursor al pasar por encima del logo
 logo.style.cursor = "pointer";
 
-// Permite arrastrar el logo
-logo.onmousedown = function (event) {
+function dragStart(event) {
   logo.style.position = "absolute";
   logo.style.zIndex = 1000;
 
@@ -43,17 +42,28 @@ logo.onmousedown = function (event) {
 
   moveAt(event.pageX, event.pageY);
 
-  function onMouseMove(event) {
+  function dragMove(event) {
     moveAt(event.pageX, event.pageY);
+    event.preventDefault();
   }
 
-  document.addEventListener("mousemove", onMouseMove);
+  document.addEventListener("mousemove", dragMove);
+  document.addEventListener("touchmove", dragMove);
 
-  logo.onmouseup = function () {
-    document.removeEventListener("mousemove", onMouseMove);
+  function dragEnd() {
+    document.removeEventListener("mousemove", dragMove);
+    document.removeEventListener("touchmove", dragMove);
     logo.onmouseup = null;
-  };
-};
+    logo.ontouchend = null;
+  }
+
+  logo.onmouseup = dragEnd;
+  logo.ontouchend = dragEnd;
+}
+
+// Permite arrastrar el logo
+logo.onmousedown = dragStart;
+logo.ontouchstart = dragStart;
 
 // Evita que el logo se salga de la pantalla al arrastrarlo
 logo.ondragstart = function () {
