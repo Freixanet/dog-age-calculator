@@ -40,3 +40,18 @@ button {
 button:hover {
   background-color: #f4a460; /* Cambia el color de fondo del botón cuando se pasa el ratón por encima */
 }
+
+/* Estilos específicos para móviles */
+@media only screen and (max-width: 600px) {
+  body {
+    font-size: larger; /* Aumenta el tamaño de la fuente para una mejor legibilidad en pantallas pequeñas */
+  }
+  #app {
+    width: auto; /* Hace que la aplicación ocupe todo el ancho disponible */
+    padding: 20px; /* Reduce el relleno para dar más espacio al contenido en pantallas pequeñas */
+  }
+  #logo {
+    width: auto; /* Hace que el logo ocupe todo el ancho disponible */
+    max-width: 100%; /* Evita que el logo sea más grande que su contenedor */
+  }
+}
