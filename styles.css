@@ -1,43 +1,42 @@
 body {
-  font-family: "Arial", sans-serif;
-  background-color: #f8f9fa;
-  color: #333;
-  padding: 0;
+  font-family: "Comic Sans MS", cursive, sans-serif;
+  background-color: #fff8dc;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
   margin: 0;
-  display: flex; /* Añadido para centrar el contenido */
-  justify-content: center; /* Centra el contenido horizontalmente */
-  align-items: center; /* Centra el contenido verticalmente */
-  height: 100vh; /* Asegura que el cuerpo ocupa toda la altura de la pantalla */
 }
-
-.app-container {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+#app {
+  background-color: #fff8dc;
+  display: inline-block;
+  padding: 80px;
+  padding-top: 0;
+  border-radius: 20px;
+  text-align: center;
 }
-
-.app-logo {
-  margin-top: -15rem;
-  width: 30rem;
+#logo {
+  width: 400px; /* Aumenta el tamaño del logo */
 }
-
-.app-title {
-  margin-top: -7rem;
-  color: #007bff;
+#content {
+  margin-top: -115px; /* Reduce el espacio entre el logo y el contenido */
 }
-
-.input-container {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+#result {
+  margin-top: 20px;
 }
-
-.date-input {
-  margin-bottom: 20px; /* Esto separa la barra de entrada de la fecha del botón */
+input[type="date"] {
+  border-radius: 5px; /* Añade un borde redondeado */
+  border: none; /* Elimina el borde predeterminado */
 }
-
-.calculate-button {
+button {
+  background-color: #f4a460; /* Cambia este color al que prefieras */
+  border-radius: 5px; /* Añade un borde redondeado */
+  border: none; /* Elimina el borde predeterminado */
+  cursor: pointer;
 }
-
-.result-text {
+button {
+  padding: 10px 20px; /* Añade algo de relleno al botón */
+}
+button:hover {
+  background-color: #f4a460; /* Cambia el color de fondo del botón cuando se pasa el ratón por encima */
 }

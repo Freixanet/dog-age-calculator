@@ -1,35 +1,29 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Calculadora de edad de perros</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Edad de tu perro</title>
     <link rel="stylesheet" type="text/css" href="styles.css" />
+    <link
+      rel="icon"
+      href="./assets/logo-dog-age-calculator-nobg.png"
+      type="image/x-icon"
+    />
   </head>
   <body>
-    <div class="app-container">
+    <div id="app">
       <img
+        id="logo"
         src="./assets/logo-dog-age-calculator-nobg.png"
         alt="Logo"
-        class="app-logo"
       />
-      <h1 class="app-title">Calcula la edad de tu perro</h1>
-      <div class="input-container">
-        <p>Introduce la fecha de nacimiento de tu perro:</p>
-        <input
-          type="date"
-          id="dog-birthday"
-          name="dog-birthday"
-          class="date-input"
-          value="2022-06-16"
-        />
+      <div id="content">
+        <h1>¿Cuántos años tiene tu perro?</h1>
+        <input type="date" id="dog-birthday" />
+        <button onclick="calculateDogAge()">Calcular</button>
+        <p id="result"></p>
       </div>
-      <button onclick="calculateDogAge()" class="calculate-button">
-        Calcular edad
-      </button>
-
-      <p id="result" class="result-text"></p>
     </div>
 
-    <script src="./scripts.js"></script>
+    <script src="scripts.js"></script>
   </body>
 </html>
