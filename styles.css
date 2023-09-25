@@ -62,4 +62,8 @@ button:hover {
     width: auto; /* Hace que el logo ocupe todo el ancho disponible */
     max-width: 100%; /* Evita que el logo sea más grande que su contenedor */
   }
+  input[type="date"] {
+    font-size: 14px; /* Ajusta este valor según tus necesidades */
+    padding: 12px; /* Ajusta este valor según tus necesidades */
+  }
 }
