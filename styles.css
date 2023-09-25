@@ -1,7 +1,7 @@
 @import url("https://github.com/github/mona-sans/raw/main/fonts/MonaSans-Regular.ttf");
 
 body {
-  font-family: "Mona Sans", cursive, sans-serif;
+  font-family: "Mona Sans", sans-serif;
   background-color: #fff8dc;
   display: flex;
   justify-content: center;
