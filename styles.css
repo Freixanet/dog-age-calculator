@@ -25,11 +25,13 @@ body {
   margin-top: -115px; /* Reduce el espacio entre el logo y el contenido */
 }
 #result {
-  margin-top: 20px;
+  margin-top: 50px;
+  font-size: 18px;
 }
 input[type="date"] {
   border-radius: 5px; /* Añade un borde redondeado */
   border: none; /* Elimina el borde predeterminado */
+  padding: 10px;
 }
 button {
   background-color: #f4a460; /* Cambia este color al que prefieras */

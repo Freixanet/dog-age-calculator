@@ -17,8 +17,9 @@ function calculateDogAge() {
   const ageInYears = ageInDays / 365.25; // Account for leap years
 
   let yearsText = "años";
-  if (Math.floor(ageInYears) < 1) {
-    yearsText = "años";
+
+  if (ageInYears >= 1 && ageInYears < 2) {
+    yearsText = "año";
   }
 
   document.getElementById("result").innerText = `Tu perro tiene ${Math.floor(
@@ -29,4 +30,6 @@ function calculateDogAge() {
 }
 
 // Set default date to June 16, 2022
-document.getElementById("dog-birthday").valueAsDate = new Date(2022, 5, 16);
+document.getElementById("dog-birthday").valueAsDate = new Date(
+  Date.UTC(2022, 5, 16)
+);
