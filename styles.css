@@ -1,5 +1,7 @@
+@import url("https://github.com/github/mona-sans/raw/main/fonts/MonaSans-Regular.ttf");
+
 body {
-  font-family: "Comic Sans MS", cursive, sans-serif;
+  font-family: "Mona Sans", cursive, sans-serif;
   background-color: #fff8dc;
   display: flex;
   justify-content: center;
@@ -34,6 +36,7 @@ button {
   border-radius: 5px; /* Añade un borde redondeado */
   border: none; /* Elimina el borde predeterminado */
   cursor: pointer;
+  color: rgb(27, 27, 27);
 }
 button {
   padding: 10px 20px; /* Añade algo de relleno al botón */
